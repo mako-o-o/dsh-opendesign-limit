@@ -1,8 +1,13 @@
 # Changelog
 
-## 1.0.0
+## 1.0.1
 
 首个正式版本。
+
+> 版本号跳过 1.0.0：首次发布时 `npm stage publish` 在 registry 上留下了一条状态为
+> `staged` 的 1.0.0 记录，而 npm 的 stage 写接口（approve / reject / DELETE）对该记录
+> 一律返回 404，unpublish 又被 granular token 的 2FA 策略拒绝——那条记录清不掉，
+> 于是 `PUT` 1.0.0 一直回 409。1.0.1 是同样代码、同一个 tarball 内容，只是换了个号。
 
 ### 读数
 

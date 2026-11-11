@@ -1,6 +1,6 @@
 {
   "name": "dsh-opendesign-limit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenDesign (AMR) subscription quota for the DSH Web GUI: the Design Plan 5-hour and 7-day windows, wallet balance and days-to-exhaust, read over two credential channels.",
   "type": "module",
   "main": "plugin/index.mjs",
