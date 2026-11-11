@@ -67,5 +67,9 @@
   "homepage": "https://github.com/mako-o-o/dsh-opendesign-limit#readme",
   "bugs": {
     "url": "https://github.com/mako-o-o/dsh-opendesign-limit/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
