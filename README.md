@@ -1,5 +1,7 @@
 # dsh-opendesign-limit
 
+<p align="center"><img src="assets/icon-180.png" width="96" alt="OpenDesign quota"></p>
+
 在 DSH Web GUI 里显示 **OpenDesign (AMR) 订阅额度**的插件：输入框旁的额度胶囊、一个配置它的设置页，以及供 Agent 调用的 `opendesign_limit` 工具。
 
 Design Plan 的额度按两档滚动窗口走——5 小时、7 天一档，余额随时在动。官方账单页要开浏览器登录才能看，而最想知道「还能不能继续跑」的时刻，恰恰是提交之前。所以这个数字就放在你正在打字的那一行上。

@@ -1,8 +1,7 @@
 {
   "name": "dsh-opendesign-limit",
-  "version": "2.6.0",
-  "private": true,
-  "description": "OpenDesign (AMR) 订阅额度读取：Design Plan 的 5 小时 / 7 天滚动窗口、钱包余额与外推天数",
+  "version": "1.0.0",
+  "description": "OpenDesign (AMR) subscription quota for the DSH Web GUI: the Design Plan 5-hour and 7-day windows, wallet balance and days-to-exhaust, read over two credential channels.",
   "type": "module",
   "main": "plugin/index.mjs",
   "exports": {
@@ -16,12 +15,27 @@
     "client",
     "locale",
     "docs",
+    "assets",
+    "screenshots.json",
     "cordis.patch.yml",
     "icon.svg",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "opendesign",
+    "quota",
+    "usage"
+  ],
+  "license": "MIT",
+  "author": "mako-o-o",
+  "engines": {
+    "dsh": ">=0.2.0-rc.1 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -35,8 +49,8 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-tools": ">=0.1.6-0",
-    "@deepseek-ai/schemastery": "^3.18.0"
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.1 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": "^3.19.0"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/dsh-tools": {
@@ -48,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mako-o-o/dsh-opendesign-limit.git"
+    "url": "git+https://github.com/mako-o-o/dsh-opendesign-limit.git"
   },
   "homepage": "https://github.com/mako-o-o/dsh-opendesign-limit#readme",
   "bugs": {
