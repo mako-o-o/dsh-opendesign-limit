@@ -1,3 +1,6 @@
+# Pack artefacts: `npm pack` writes these into the repo root.
+*.tgz
+
 # Dependency trees and build output that a consumer never needs.
 node_modules/
 *.tmp
