@@ -1,0 +1,14 @@
+# Dependency trees and build output that a consumer never needs.
+node_modules/
+*.tmp
+*.bak
+*.bak-*
+
+# Local analysis snapshots and harness scratch files.
+*.log
+.tsbuildinfo
+
+# OS noise.
+Thumbs.db
+.DS_Store
+desktop.ini

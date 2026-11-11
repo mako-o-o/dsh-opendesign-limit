@@ -1,0 +1,57 @@
+{
+  "name": "dsh-opendesign-limit",
+  "version": "2.6.0",
+  "private": true,
+  "description": "OpenDesign (AMR) 订阅额度读取：Design Plan 的 5 小时 / 7 天滚动窗口、钱包余额与外推天数",
+  "type": "module",
+  "main": "plugin/index.mjs",
+  "exports": {
+    ".": "./plugin/index.mjs",
+    "./client": "./client/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "plugin",
+    "client",
+    "locale",
+    "docs",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.6-0",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mako-o-o/dsh-opendesign-limit.git"
+  },
+  "homepage": "https://github.com/mako-o-o/dsh-opendesign-limit#readme",
+  "bugs": {
+    "url": "https://github.com/mako-o-o/dsh-opendesign-limit/issues"
+  }
+}

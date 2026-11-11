@@ -1,0 +1,25 @@
+# dsh-opendesign-limit bundle layer: register this plugin's Loader row.
+#
+# The row id `opendesign-limit` is also the settings namespace the plugin's own
+# client form keys off. Do not rename it without updating ENTRY_NS in
+# client/client.js.
+#
+# Every value under `config:` is user-owned; the block only declares behaviour
+# defaults so the Plugins page has a schema to render.
+- insert:
+    - id: opendesign-limit
+      name: "dsh-opendesign-limit"
+      config:
+        autoRefresh: true
+        minIntervalSec: 60
+        composerPill: true
+        # Where the numbers come from: `auto` (local controlKey first, browser
+        # session as fallback), `local` (controlKey only), `browser` (the
+        # credential record a sign-in fills).
+        source: auto
+        # Layout: `compact` (A, the small pill) or `studio` (B, the wide
+        # instrument panel). B-only presentation settings follow.
+        layout: compact
+        studioSparkline: true
+        studioMeta: true
+        studioHeroShortest: true
