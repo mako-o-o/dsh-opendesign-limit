@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2
+
+### Fixed — 插件管理页的卡片缺简介
+
+`package.json` 的 `exports` 没有导出 `./package.json`。宿主的 `readPluginMeta()` 会通过
+`<包名>/package.json` 读取 `description` 作为卡片简介与详情页标题的兜底，未导出时该读取
+失败，卡片就只剩名称、版本号和「添加备注」。
+
+补上 `"./package.json": "./package.json"`。中英文 `locale/*.json` 里的 `meta.description`
+本来就有，这一项只是把宿主读取清单的那条路接通。
+
 ## 1.0.1
 
 首个正式版本。
